@@ -1,3 +1,3 @@
-# Webpack starter 
+# A simple tasks's system. 
 
-This is one interface for creating projects using webpack. 
+This is my first project using webpack. 
