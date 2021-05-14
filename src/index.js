@@ -4,13 +4,8 @@ import { ToDoList } from "./classes/todo-list.class"; */
 import {ToDo, ToDoList} from "./classes"
 import { createTaskHtml } from "./js/components";
 
-const myList = new ToDoList(); 
-const task = new ToDo("Testing JS");
-myList.newToDo(task); 
+export const myList = new ToDoList(); 
 
+console.log (myList.toDos);
 
-console.log(myList); 
-
-task.completed = true; 
-
-createTaskHtml(task)
+myList.toDos.forEach(todo => createTaskHtml(todo)); 
